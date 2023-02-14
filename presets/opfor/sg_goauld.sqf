@@ -43,58 +43,85 @@ Therefore, adding the same value twice or three times means they are more likely
 /* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 militia_squad = [
-    "sga_jaffa",                                                     // Rifleman (Lite)
-    "sga_jaffa",                                                     // Rifleman (Lite)
-    "sga_jaffa_serpent_guard_closed",                                                 // Rifleman (AT)
-    "sga_jaffa_serpent_guard_closed",                                                  // Autorifleman
-    "sga_jaffa_black",                                                   // Marksman
-    "sga_jaffa_gold",                                               // Medic
-    "sga_jaffa_gold"                                                    // Engineer
+    "sga_jaffa",
+    "sga_jaffa",
+    "sga_jaffa",
+    "sga_jaffa",
+    "sga_jaffa",
+    "sga_jaffa",
+    "sga_jaffa_serpent_guard_closed",
+    "sga_jaffa_serpent_guard_closed",
+    "sga_jaffa_black",
+    "sga_jaffa_gold",
+    "sga_jaffa_gold"
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 militia_vehicles = [
-    "teltac_heli"                                                  // Qilin (armed)
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "teltac_heli"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 opfor_vehicles = [
-    "SG_DeathGlider_Heli",                                                  // Ifrit (HMG)
-    "teltac_heli",                                                  // Ifrit (GMG)
-    "sg_hatak"
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "teltac_heli"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
-    "teltac_heli"                                                  // Ifrit (HMG)
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
-    "SG_DeathGlider_Heli",                                                  // Ifrit (HMG)
-    "teltac_heli",                                                  // Ifrit (GMG)
-    "sg_hatak"
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "teltac_heli"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
-                                    // Qilin (armed)
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "SG_DeathGlider_Heli",
+    "teltac_heli"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.    */
 opfor_troup_transports = [
-    "sg_hatak"
+    "teltac_heli"
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
-    "SG_DeathGlider_Heli",                                      // Mi-290 Taru (Bench)
-    "teltac_heli",                                 // Po-30 Orca (Armed)
-    "sg_hatak"                                 // Mi-48 Kajman
+    "SG_DeathGlider_Heli",
+    "teltac_heli"
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-                                            // To-201 Shikra
 ];
